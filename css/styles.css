@@ -27,5 +27,36 @@ img {
   height: auto;
 }
 body {
-  background-color: linear-gradient(#af67e9, #f00);
+  background: linear-gradient(#af67e9, #2d0b4a);
+  font-family: 'Kumbh Sans', sans-serif;
+}
+main {
+  background-color: #ebebeb;
+  margin: 0 auto;
+  margin-top: 140px;
+  max-width: 370px;
+  border-radius: 20px;
+  box-shadow: 14px 17px 31px 0px rgba(176,176,176,0.75);
+}
+.header {
+  position: absolute;
+  margin-top: -110px;
+  right: 20px;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 266px;
+  height: 220px;
+  background-image: url("../images/bg-pattern-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 90% 50%;
+  background-position: bottom right;
+}
+.faq {
+  padding-top: 100px;
+}
+.faq__title {
+  text-align: center;
+  font-size: 4rem;
+  color: #1d1e35;
 }

@@ -2,4 +2,36 @@
 @import './_tokens.styl'
 
 body
-	background-color linear-gradient(softViolet, red)
+	background linear-gradient(softViolet, softVioletDarken)
+	font-family ffPrimary
+
+main
+	background-color white
+	margin 0 auto
+	margin-top spacingBig
+	max-width 370px
+	border-radius 20px
+	box-shadow shadow
+
+.header
+	position absolute
+	margin-top -110px
+	right 20px
+	left 0
+	margin-left auto
+	margin-right auto
+	width 266px
+	height 220px
+	background-image url('../images/bg-pattern-mobile.svg')
+	background-repeat no-repeat
+	background-size 90% 50%
+	background-position bottom right
+
+
+
+.faq
+	padding-top 100px
+	&__title
+		text-align center
+		font-size 4rem
+		color veryDarkDesaturatedBlue
