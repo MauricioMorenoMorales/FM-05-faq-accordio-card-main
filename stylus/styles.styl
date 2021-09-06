@@ -2,8 +2,9 @@
 @import './_tokens.styl'
 
 body
-	background linear-gradient(softViolet, softVioletDarken)
 	font-family ffPrimary
+	background linear-gradient(softViolet, softBlue)
+	min-height 100vh
 
 main
 	background-color white
@@ -31,7 +32,30 @@ main
 
 .faq
 	padding-top 100px
+	padding-bottom 50px
 	&__title
 		text-align center
 		font-size 4rem
-		color veryDarkDesaturatedBlue
+		color veryDarkGrayishBlue
+	&__item
+		border-bottom 1px solid lighten(darkGrayishBlue, 50%)
+		max-width 350px
+		margin 0 auto
+		&__header
+			display flex
+			justify-content space-between
+			align-items center
+			color veryDarkGrayishBlue
+			&.active
+				font-weight fwBold
+			&__arrow
+				height 10px
+				&.active
+					transform rotate(180deg)
+		&__content
+			color darkGrayishBlue
+			display none
+			&__text
+				margin 0 0 20px 0
+			&.active
+				display block
