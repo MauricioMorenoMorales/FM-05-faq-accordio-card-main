@@ -1,4 +1,10 @@
 const $items = document.querySelectorAll('.faq__item');
+const $box = document.querySelector('.header__box-illustration');
+
+document.addEventListener('mousemove', event => {
+	console.log(event.offsetX);
+	$box.style.left = -103 + event.offsetX / 300 + 'px';
+});
 
 document.addEventListener('click', event => {
 	if (

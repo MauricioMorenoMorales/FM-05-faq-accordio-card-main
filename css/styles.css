@@ -57,6 +57,9 @@ main {
   background-size: 90% 50%;
   background-position: bottom right;
 }
+.header__box-illustration {
+  display: none;
+}
 .faq {
   padding-top: 100px;
   padding-bottom: 50px;
@@ -125,13 +128,13 @@ main {
     height: 350px;
   }
   .header__main-illustration {
-    margin-left: -70px;
+    margin-left: -50px;
   }
   .header__box-illustration {
+    display: block;
     position: absolute;
-    z-index: 1000;
-    top: 0;
-    right: 0;
+    top: 100px;
+    left: -103px;
   }
   .faq {
     grid-area: faq;
