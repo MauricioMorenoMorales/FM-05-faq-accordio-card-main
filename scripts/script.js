@@ -2,8 +2,7 @@ const $items = document.querySelectorAll('.faq__item');
 const $box = document.querySelector('.header__box-illustration');
 
 document.addEventListener('mousemove', event => {
-	console.log(event.offsetX);
-	$box.style.left = -103 + event.offsetX / 300 + 'px';
+	$box.style.left = -104 + event.pageX / 250 + 'px';
 });
 
 document.addEventListener('click', event => {

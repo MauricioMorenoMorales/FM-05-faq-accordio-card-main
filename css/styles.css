@@ -51,11 +51,12 @@ main {
   width: 266px;
   height: 220px;
 }
-.header--wrapper {
+.header__main-illustration--wrapper {
   background-image: url("../images/bg-pattern-mobile.svg");
   background-repeat: no-repeat;
   background-size: 90% 50%;
   background-position: bottom right;
+  height: 210px;
 }
 .header__box-illustration {
   display: none;
@@ -120,7 +121,7 @@ main {
     margin-top: 50px;
     z-index: 2;
   }
-  .header--wrapper {
+  .header__main-illustration--wrapper {
     overflow: hidden;
     background-size: 90% 40%;
     background-position-x: -30px;
