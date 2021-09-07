@@ -25,10 +25,11 @@ main
 	margin-right auto
 	width 266px
 	height 220px
-	background-image url('../images/bg-pattern-mobile.svg')
-	background-repeat no-repeat
-	background-size 90% 50%
-	background-position bottom right
+	&--wrapper
+		background-image url('../images/bg-pattern-mobile.svg')
+		background-repeat no-repeat
+		background-size 90% 50%
+		background-position bottom right
 
 
 
@@ -74,7 +75,32 @@ main
 		grid-template-areas "image faq"
 
 	.header
-		position static
+		position relative
 		grid-area image
+		margin 0
+		height 360px
+		width auto
+		margin-top 50px
+		z-index 2
+		&--wrapper
+			overflow hidden
+			background-size 90% 40%
+			background-position-x -30px
+			margin-left -10px
+			height 350px
+		&__main-illustration
+			margin-left -70px
+		&__box-illustration
+			position absolute
+			z-index 1000
+			top 0
+			right 0
 	.faq
 		grid-area faq
+		padding-top 0
+		&__item
+			margin 0
+			user-select none
+		&__title
+			text-align start
+			margin-bottom 0
