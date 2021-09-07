@@ -91,6 +91,7 @@ main {
 }
 .faq__item__header__arrow {
   height: 10px;
+  padding-right: 10px;
 }
 .faq__item__header__arrow.active {
   transform: rotate(180deg);
@@ -98,6 +99,7 @@ main {
 .faq__item__content {
   color: #787887;
   display: none;
+  padding-right: 20px;
 }
 .faq__item__content__text {
   margin: 0 0 20px 0;
@@ -108,24 +110,28 @@ main {
 @media screen and (min-width: 1000px) {
   main {
     display: grid;
-    max-width: 800px;
+    max-width: 900px;
     grid-template-columns: 50% 50%;
     grid-template-areas: "image faq";
+    padding-left: 0;
   }
   .header {
     position: relative;
+    background-image: url("../images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 800px 800px;
+    background-position-x: -400px;
+    background-position-y: -250px;
     grid-area: image;
     margin: 0;
-    height: 360px;
+    height: 100%;
     width: auto;
-    margin-top: 50px;
+    padding-top: 50px;
     z-index: 2;
   }
   .header__main-illustration--wrapper {
     overflow: hidden;
-    background-size: 90% 40%;
-    background-position-x: -30px;
-    margin-left: -10px;
+    background: none;
     height: 350px;
   }
   .header__main-illustration {
@@ -134,8 +140,8 @@ main {
   .header__box-illustration {
     display: block;
     position: absolute;
-    top: 100px;
-    left: -103px;
+    top: 150px;
+    left: -93px;
   }
   .faq {
     grid-area: faq;
@@ -145,6 +151,7 @@ main {
     margin: 0;
     -webkit-user-select: none;
             user-select: none;
+    max-width: 430px;
   }
   .faq__title {
     text-align: start;
